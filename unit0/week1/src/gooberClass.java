@@ -11,6 +11,8 @@ public class gooberClass {
         System.out.println("Linz is a goober");
         word = input.nextLine();
         
+        int num;
+        
         System.out.println(word);
     }
     
