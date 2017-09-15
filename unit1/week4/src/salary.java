@@ -12,7 +12,7 @@ import java.text.NumberFormat;
  
 public class salary {
 
-   public static void main (String[] awrgs) {
+   public static void main (String[] args) {
 
            double currentSalary;  // employee's current  salary
            double raise;              // amount of the raise
