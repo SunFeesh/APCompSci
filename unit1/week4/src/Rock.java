@@ -42,12 +42,12 @@ public class Rock {
         System.out.println();
       
         //See who won.
-        game();
+        game(computerPlay, personPlay2);
 
-
+    input.close();
     }
 
-    public static void game(C, P){
+    public static void game(String C, String P){
        //When Computer Throws Rock...
        if (C.equals("R")){
             if(P.equals("P")){
@@ -60,18 +60,35 @@ public class Rock {
                 error();
             }
         //When Computer Throws Paper...
-        
-        //When Computer Throws Scissors...
-
-        
+        } else if (C.equals("P")) {
+            if(P.equals("R")){
+                lose();
+            } else if (P.equals("P")){
+                tie();
+            } else if (P.equals("S")){
+                win();
+            } else {
+                error();
+            }
+      //When Computer Throws Scissors...
+        } else {
+            if(P.equals("R")){
+                win();
+            } else if (P.equals("P")){
+                lose();
+            } else if (P.equals("S")){
+                tie();
+            } else {
+                error();
+            }
         }
 
-        
+    
     }
 
 
     public static void win(){
-         System.out.println("You Win!");
+         System.out.println("You Win! (*≧▽≦)");
     }
     
     public static void tie(){
