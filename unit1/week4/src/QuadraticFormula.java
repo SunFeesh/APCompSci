@@ -18,7 +18,7 @@ public class QuadraticFormula {
         //Check a..
         if (a == 0){
             System.out.println("a Cannot Be Zero. Try Again!");
-            return;
+            System.exit(0);
         } else {}
 
         //Check if real..
@@ -26,7 +26,7 @@ public class QuadraticFormula {
         
         if (rooted < 0) {
             System.out.println("The answers are not real numbers.");
-            return;
+            System.exit(0);
         } else {}
         
         //actually do the *math*
