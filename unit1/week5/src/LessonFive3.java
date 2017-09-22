@@ -8,7 +8,7 @@ public class LessonFive3 {
         
         
         //int ; boolean logic ; increment
-        for(int i = 1;i < 100000000;i++) {
+        for(int i = 1;i < 10;i++) {
                           // i++ is equal to (i = i + 1)
             
             System.out.print(i + " ");
